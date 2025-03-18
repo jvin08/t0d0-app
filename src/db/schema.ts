@@ -4,5 +4,5 @@ export const todos = pgTable('todos', {
   id: integer('id').primaryKey(),
   title: text('title').notNull(),
   text: text('text').notNull(),
-  completed: boolean('completed').default(false),
+  done: boolean('done').default(false).notNull(),
 });
