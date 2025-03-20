@@ -11,7 +11,7 @@ export default function Home() {
     const interval = setInterval(async () => {
       const response = await getData();
       setData(response);
-    }, 5000); // Poll every 5 seconds
+    }, 3000); // Poll every 5 seconds
     return () => clearInterval(interval);
 
   }, []);
